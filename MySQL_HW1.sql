@@ -21,19 +21,19 @@ SELECT ProductName, Manufacturer, Price  FROM phones where ProductCount > 2;
 
 SELECT * FROM phones where Manufacturer = 'Samsung';
 
--- 4.1. Выведите товыры в которых есть упоминание "Iphone".
+-- 4.1. Выведите товары в которых есть упоминание "Iphone".
 
 SELECT * FROM phones where ProductName LIKE 'Iphone%';
 
--- 4.2. Выведите товыры в которых есть упоминание "Samsung".
+-- 4.2. Выведите товары в которых есть упоминание "Samsung".
 
 SELECT * FROM phones where Manufacturer LIKE 'Samsung%';
 
--- 4.3. Выведите товыры в которых есть цифры.
+-- 4.3. Выведите товары в которых есть цифры.
 
 SELECT * FROM phones WHERE ProductName REGEXP '[0-9]';
 
--- 4.4. Выведите товыры в которых есть цифра "8".
+-- 4.4. Выведите товары в которых есть цифра "8".
 
 SELECT * FROM phones WHERE ProductName LIKE '%8%';
 
